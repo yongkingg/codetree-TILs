@@ -1,9 +1,9 @@
 n = int(input())
-if (n >= book):
+if (n >= 3000):
     print("book")
-elif(n >= mask):
+elif(n >= 1000):
     print("mask")
-elif(n >= pen):
+elif(n >= 500):
     print("pen")
 else:
     print("no")
