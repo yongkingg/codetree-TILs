@@ -8,4 +8,4 @@ for point in range(n):
         peopleDx = dx * Ai[x]
         emptyList.append(peopleDx)
     total.append(sum(emptyList))
-print(total)
+print(min(total))
