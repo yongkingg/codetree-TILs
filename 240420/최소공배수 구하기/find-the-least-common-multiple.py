@@ -6,7 +6,7 @@ def solv(n,m):
         if n % index == 0 and m % index == 0:
             value = (n * m) / index
 
-    print(value)
+    print(int(value))
 
 
 solv(n,m)
