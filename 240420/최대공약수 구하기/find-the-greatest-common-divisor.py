@@ -5,7 +5,7 @@ def solv(n,m):
     for index in range(1, min(n,m) + 1):
         if n % index == 0 and m % index == 0:
             value = index
-        print(value)
+    print(value)
 
 
 solv(n,m)
