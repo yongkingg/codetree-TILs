@@ -1,15 +1,15 @@
 def plus(a, o, c):
     result = a + c
-    return ("{} {} {} = {}".format(a, o, c, result))
+    return ("{} {} {} = {}".format(a, o, c, int(result)))
 def minus(a, o, c):
     result = a - c
-    return ("{} {} {} = {}".format(a, o, c, result))
+    return ("{} {} {} = {}".format(a, o, c, int(result)))
 def multi(a, o, c):
     result = a * c
-    return ("{} {} {} = {}".format(a, o, c, result))
+    return ("{} {} {} = {}".format(a, o, c, int(result)))
 def divide(a, o, c):
     result = a / c
-    return ("{} {} {} = {}".format(a, o, c, result))
+    return ("{} {} {} = {}".format(a, o, c, int(result)))
 
 
 
