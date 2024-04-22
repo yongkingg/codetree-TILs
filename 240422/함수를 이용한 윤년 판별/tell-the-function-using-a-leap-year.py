@@ -1,7 +1,8 @@
 def is_yoon(n):
-    if n % 4 == 0 or n % 400 == 0:
+    if n % 4 == 0:
+        if n % 100 == 0 and n % 400 != 0:
+            return False
         return True
-    return False
 
 n = int(input())
 if is_yoon(n):
