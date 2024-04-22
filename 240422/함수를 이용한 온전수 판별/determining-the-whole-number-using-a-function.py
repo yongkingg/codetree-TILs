@@ -14,7 +14,7 @@ def isMagicNum(n):
 
 a, b = map(int,input().split())
 count = 0
-for index in range(a, b):
+for index in range(a, b+1):
     if isMagicNum(index):
         count += 1
 print(count)
