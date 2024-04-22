@@ -14,13 +14,13 @@ def divide(a, o, c):
 
 
 a, o, c = map(str,input().split())
-if o == "*":
-    print(plus(a, o, c))
+if o == "+":
+    print(plus(int(a), o, int(c)))
 elif o == "-":
-    print(minus(a,o,c))
+    print(minus(int(a), o, int(c)))
 elif o == "*":
-    print(minus(a,o,c))
+    print(multi(int(a), o, int(c)))
 elif o == "/":
-    print(divide(a,o,c))
+    print(divide(int(a), o, int(c)))
 else:
     print("False")
