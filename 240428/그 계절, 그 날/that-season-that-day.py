@@ -7,7 +7,7 @@ def is_yoon_year(Y):
         return False
 
 def is_correct_day(yoon, M,D):
-    if M > 12 or M:
+    if M > 12 or M < 1:
         return False
     else:
         if yoon:
