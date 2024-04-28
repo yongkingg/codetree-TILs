@@ -10,4 +10,4 @@ def getIndex(nList):
     return nList
 
 
-print(getIndex(nList))
+print(*getIndex(nList))
