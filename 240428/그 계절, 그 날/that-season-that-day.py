@@ -1,13 +1,13 @@
 # 윤년 == 2월이 29일까지 있음.
 # 짝수달 => 30일까지, 홀수달 => 31일까지
 def is_yoon_year(Y):
-    if (Y % 4 == 0 and Y % 100 != 0) or (Y % 4 == 0 and Y % 100 == 0 and Y % 400 == 0):
+    if (Y % 4 == 0 and Y % 100 != 0) or (Y % 400 == 0):
         return True
     else:
         return False
 
 def is_correct_day(yoon, M,D):
-    if M > 12 or M < 1:
+    if M > 12 or M:
         return False
     else:
         if yoon:
