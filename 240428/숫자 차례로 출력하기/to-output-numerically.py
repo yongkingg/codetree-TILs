@@ -12,7 +12,7 @@ def printText2(n):
     if n == 0:
         return
     
-    printText1(n -1)
+    printText2(n -1)
     print(n, end=" ")
 
 printText2(N)
