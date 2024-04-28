@@ -1,12 +1,9 @@
 n = int(input())
-count = 0
-def f(n, count):
+def f(n):
     if n == 1:
-        return count
+        return 0
     elif n % 2 == 0:
-        count += 1
-        return f(n // 2, count)
+        return f(n // 2) + 1
     elif n % 2 != 0:
-        count += 1
-        return f(n // 3, count)
-print(f(n, count))
+        return f(n // 3) + 1
+print(f(n))
