@@ -15,9 +15,9 @@ def is_correct_day(yoon, M,D):
             if M == 8:
                 if D > 31:
                     return False
-                else:
-                    if D > 30:
-                        return False
+            else:
+                if D > 30:
+                    return False
         elif M % 2 != 0:
             if D > 31:
                 return False
