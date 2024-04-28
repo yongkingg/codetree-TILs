@@ -52,9 +52,8 @@ def is_weather(M):
 
 Y, M, D = map(int,input().split())
 isYoon = is_yoon_year(Y)
-if isYoon:
-    isCorrect = is_correct_day(isYoon, M, D)
-    if isCorrect:
-        is_weather(M)
+isCorrect = is_correct_day(isYoon, M, D)
+if isCorrect:
+    is_weather(M)
 else:
     print("-1")
