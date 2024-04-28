@@ -7,37 +7,40 @@ def is_yoon_year(Y):
         return False
 
 def is_correct_day(yoon, M,D):
-    if yoon:
-        if M == 2:
-            if D > 29:
-                return False
-        elif M % 2 == 0:
-            if M == 8:
-                if D > 31:
-                    return False
-            else:
-                if D > 30:
-                    return False
-        elif M % 2 != 0:
-            if D > 31:
-                return False
-        return True
-
+    if M > 12:
+        return False
     else:
-        if M == 2:
-            if D > 28:
-                return False
-        elif M % 2 == 0:
-            if M == 8:
+        if yoon:
+            if M == 2:
+                if D > 29:
+                    return False
+            elif M % 2 == 0:
+                if M == 8:
+                    if D > 31:
+                        return False
+                else:
+                    if D > 30:
+                        return False
+            elif M % 2 != 0:
                 if D > 31:
                     return False
-            else:
-                if D > 30:
+            return True
+
+        else:
+            if M == 2:
+                if D > 28:
                     return False
-        elif M % 2 != 0:
-            if D > 31:
-                return False
-        return True
+            elif M % 2 == 0:
+                if M == 8:
+                    if D > 31:
+                        return False
+                else:
+                    if D > 30:
+                        return False
+            elif M % 2 != 0:
+                if D > 31:
+                    return False
+            return True
 
 def is_weather(M):
     if M == 3 or M == 4 or M == 5:
