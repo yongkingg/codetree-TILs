@@ -6,7 +6,6 @@ def is_yoon_year(Y):
     else:
         return False
 
-
 def is_correct_day(yoon, M,D):
     if yoon:
         if M == 2:
@@ -41,14 +40,16 @@ def is_correct_day(yoon, M,D):
         return True
 
 def is_weather(M):
-    if M >= 3 and M <= 5:
+    if M == 3 or M == 4 or M == 5:
         print("Spring")
-    elif M >= 6 and M <= 8:
+    elif M == 6 or M == 7 or M == 8:
         print("Summer")
-    elif M >= 9 and M <= 11:
+    elif M == 9 or M == 10 or M == 11:
         print("Fall")
-    else:
+    elif M == 12 or M == 1 or M == 2:
         print("Winter")
+    else:
+        print("-1")
 
 Y, M, D = map(int,input().split())
 isYoon = is_yoon_year(Y)
