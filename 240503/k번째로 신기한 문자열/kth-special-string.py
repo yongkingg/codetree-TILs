@@ -9,4 +9,4 @@ for index in range(int(n)):
 
 
 wordList.sort()
-print(wordList[int(k-1)])
+print(wordList[int(int(k)-1)])
