@@ -1,0 +1,5 @@
+text = input()
+text = list(text)
+text.sort()
+printText = ''.join(text)
+print(printText)
