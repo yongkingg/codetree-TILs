@@ -7,4 +7,6 @@ for index in range(int(n)):
         word = ''.join(word)
         wordList.append(word)
 
+
+wordList.sort()
 print(wordList[int(k)])
