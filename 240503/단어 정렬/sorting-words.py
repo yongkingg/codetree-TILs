@@ -2,10 +2,8 @@ n = int(input())
 emptyList = []
 for index in range(n):
     text = input()
-    text = list(text)
-    text.sort()
-    sortText = ''.join(text)
+    emptyList.append(text)
 
-    emptyList.append(sortText)
+emptyList.sort()
 for index in range(n):
     print(emptyList[index])
