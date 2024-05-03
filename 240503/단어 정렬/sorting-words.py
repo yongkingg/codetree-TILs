@@ -1,9 +1,12 @@
 n = int(input())
-textList = []
+emptyList = []
 for index in range(n):
-    inputText = input()
-    sortText = list(inputText).sort()
-    textList.append(sortText)
+    text = input()
+    text = list(text)
+    text.sort()
+    print(text)
+    sortText = ''.join(text)
 
+    emptyList.append(sortText)
 for index in range(n):
-    print(textList[index])
+    print(emptyList[index])
