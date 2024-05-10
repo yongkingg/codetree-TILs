@@ -11,7 +11,7 @@ for index in range(N):
     h, w = map(int,input().split())
     infoList.append(Student(h,w, index + 1))
 
-infoList.sort(key= lambda x : (x.h, x.w))
+infoList.sort(key= lambda x : (x.h, -x.w))
 
 
 for index in range(len(infoList)):
