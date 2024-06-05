@@ -6,6 +6,12 @@ type = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 days_dif = (sum(days[:m2 - 1]) + d2) - (sum(days[:m1 - 1]) + d1)
 day_idx = type.index(A)
 
-value = int((days_dif + day_idx) / 7)
+count = 0
+for index in range(abs(days_dif)):
+    tmpType = type[int((index + day_idx + 1) % 7)]
+    print(tmpType)
+    if tmpType == A:
+        print(index + 1)
+        count += 1
 
-print(value)
+print(count)
