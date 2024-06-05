@@ -9,13 +9,19 @@ start_weekday = type.index(A)
 # 목표 요일 계산
 target_weekday = type.index(A)
 
-# 두 날짜의 총 일수 계산
-total_days = (sum(days[:m2 - 1]) + d2) - (sum(days[:m1 - 1]) + d1) + 1
+# 두 날짜 사이의 날 수 계산
+total_days = 0
+for month in range(m1, m2 + 1):
+    # 현재 월의 마지막 날짜
+    if month == m2:
+        last_day = d2
+    else:
+        last_day = days[month - 1]
+    
+    # 현재 월에서 A요일이 몇 번 등장하는지 계산
+    for day in range(1, last_day + 1):
+        if (start_weekday + day - 1) % 7 == target_weekday:
+            total_days += 1
 
-# 특정 요일의 등장 횟수 계산
-count = 0
-for day_offset in range(total_days):
-    if (start_weekday + day_offset) % 7 == target_weekday:
-        count += 1
-
-print(count)
+# 결과 출력
+print(total_days)
